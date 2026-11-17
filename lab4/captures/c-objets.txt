@@ -1,0 +1,18 @@
+NAME                     READY   UP-TO-DATE   AVAILABLE   AGE    CONTAINERS   IMAGES                 SELECTOR
+deployment.apps/whoami   6/6     6            6           7m5s   whoami       traefik/whoami:v1.10   app=whoami
+
+NAME                                DESIRED   CURRENT   READY   AGE     CONTAINERS   IMAGES                 SELECTOR
+replicaset.apps/whoami-5cbf4fd94f   6         6         6       3m35s   whoami       traefik/whoami:v1.10   app=whoami,pod-template-hash=5cbf4fd94f
+replicaset.apps/whoami-7db6bb54db   0         0         0       7m5s    whoami       traefik/whoami         app=whoami,pod-template-hash=7db6bb54db
+
+NAME                          READY   STATUS    RESTARTS   AGE     IP           NODE             NOMINATED NODE   READINESS GATES
+pod/whoami-5cbf4fd94f-c5qjc   1/1     Running   0          83s     10.244.2.7   tp-k8s-worker2   <none>           <none>
+pod/whoami-5cbf4fd94f-htp46   1/1     Running   0          46s     10.244.1.6   tp-k8s-worker    <none>           <none>
+pod/whoami-5cbf4fd94f-jgcqg   1/1     Running   0          46s     10.244.2.8   tp-k8s-worker2   <none>           <none>
+pod/whoami-5cbf4fd94f-v4xqs   1/1     Running   0          46s     10.244.1.5   tp-k8s-worker    <none>           <none>
+pod/whoami-5cbf4fd94f-wlk2c   1/1     Running   0          3m11s   10.244.1.4   tp-k8s-worker    <none>           <none>
+pod/whoami-5cbf4fd94f-zl9n4   1/1     Running   0          3m18s   10.244.2.6   tp-k8s-worker2   <none>           <none>
+
+NAME                 TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)        AGE   SELECTOR
+service/kubernetes   ClusterIP   10.96.0.1    <none>        443/TCP        31m   <none>
+service/whoami       NodePort    10.96.4.34   <none>        80:30080/TCP   14m   app=whoami
