@@ -1,0 +1,4 @@
+NAME                   STATUS   ROLES           AGE     VERSION   INTERNAL-IP   EXTERNAL-IP   OS-IMAGE                       KERNEL-VERSION                              CONTAINER-RUNTIME
+tp-k8s-control-plane   Ready    control-plane   4m2s    v1.37.0   172.18.0.4    <none>        Debian GNU/Linux 13 (trixie)   6.18.58.1-microsoft-standard-WSL2 (amd64)   containerd://2.3.4
+tp-k8s-worker          Ready    <none>          3m49s   v1.37.0   172.18.0.2    <none>        Debian GNU/Linux 13 (trixie)   6.18.58.1-microsoft-standard-WSL2 (amd64)   containerd://2.3.4
+tp-k8s-worker2         Ready    <none>          3m49s   v1.37.0   172.18.0.3    <none>        Debian GNU/Linux 13 (trixie)   6.18.58.1-microsoft-standard-WSL2 (amd64)   containerd://2.3.4

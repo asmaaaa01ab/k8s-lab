@@ -1,0 +1,4 @@
+CONTAINER ID   IMAGE                  COMMAND                  CREATED         STATUS         PORTS                                                 NAMES
+2903b57a9572   kindest/node:v1.37.0   "/usr/local/bin/entr???"   5 minutes ago   Up 5 minutes                                                         tp-k8s-worker2
+73c9d477f40f   kindest/node:v1.37.0   "/usr/local/bin/entr???"   5 minutes ago   Up 5 minutes   0.0.0.0:30080->30080/tcp, 127.0.0.1:57066->6443/tcp   tp-k8s-control-plane
+d0797f553e2e   kindest/node:v1.37.0   "/usr/local/bin/entr???"   5 minutes ago   Up 5 minutes                                                         tp-k8s-worker

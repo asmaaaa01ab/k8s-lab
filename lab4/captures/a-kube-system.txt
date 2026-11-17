@@ -1,0 +1,13 @@
+NAME                                           READY   STATUS    RESTARTS   AGE     IP           NODE                   NOMINATED NODE   READINESS GATES
+coredns-559f6c778d-8kgdr                       1/1     Running   0          4m14s   10.244.0.2   tp-k8s-control-plane   <none>           <none>
+coredns-559f6c778d-zzzp4                       1/1     Running   0          4m14s   10.244.0.4   tp-k8s-control-plane   <none>           <none>
+etcd-tp-k8s-control-plane                      1/1     Running   0          4m23s   172.18.0.4   tp-k8s-control-plane   <none>           <none>
+kindnet-7zlkf                                  1/1     Running   0          4m12s   172.18.0.3   tp-k8s-worker2         <none>           <none>
+kindnet-9jj67                                  1/1     Running   0          4m14s   172.18.0.4   tp-k8s-control-plane   <none>           <none>
+kindnet-wq5rf                                  1/1     Running   0          4m12s   172.18.0.2   tp-k8s-worker          <none>           <none>
+kube-apiserver-tp-k8s-control-plane            1/1     Running   0          4m21s   172.18.0.4   tp-k8s-control-plane   <none>           <none>
+kube-controller-manager-tp-k8s-control-plane   1/1     Running   0          4m23s   172.18.0.4   tp-k8s-control-plane   <none>           <none>
+kube-proxy-crbzf                               1/1     Running   0          4m14s   172.18.0.4   tp-k8s-control-plane   <none>           <none>
+kube-proxy-rn4ll                               1/1     Running   0          4m12s   172.18.0.3   tp-k8s-worker2         <none>           <none>
+kube-proxy-sfkqs                               1/1     Running   0          4m12s   172.18.0.2   tp-k8s-worker          <none>           <none>
+kube-scheduler-tp-k8s-control-plane            1/1     Running   0          4m21s   172.18.0.4   tp-k8s-control-plane   <none>           <none>
