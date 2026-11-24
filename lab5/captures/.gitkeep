@@ -1,0 +1,4 @@
+# Secrets : ne JAMAIS versionner
+lab5/secret*.yaml
+*.secret.yaml
+.env
